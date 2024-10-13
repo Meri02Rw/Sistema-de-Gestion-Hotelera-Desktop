@@ -1,4 +1,6 @@
-﻿using System.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -11,24 +13,36 @@ using System.Windows.Shapes;
 
 namespace hotel_management_system
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
-    public partial class MainWindow : Window
+
+    public partial class Login : Window
     {
-        public MainWindow()
+
+        private Dictionary<string, string> users = new Dictionary<string, string>
+        {
+            { "admin", "12345" },
+            { "user1", "00000" },
+            { "user2", "11111" }
+        };
+
+        public Login()
         {
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void LoginButton_Click(object sender, RoutedEventArgs e)
         {
+            string username = user.Text;
+            string password = pass.Password;
 
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
+            if (users.ContainsKey(username) && users[username] == password)
+            {
+                new Inicio().Show(); 
+                this.Close();
+            }
+            else
+            {
+                error.Text = "Usuario o contraseña incorrectos.";
+            }
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

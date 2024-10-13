@@ -19,3 +19,7 @@ D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hote
 D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\hotel_management_system.sourcelink.json
 D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\hotel_management_system.genruntimeconfig.cache
 D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\ref\hotel_management_system.dll
+D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\RecuperarPass.g.cs
+D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\recuperarPass.baml
+D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\Inicio.g.cs
+D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\obj\Debug\net8.0-windows\Inicio.baml

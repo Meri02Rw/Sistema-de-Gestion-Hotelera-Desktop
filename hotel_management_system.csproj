@@ -10,11 +10,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Group 7.png" />
+    <None Remove="img\Frame.png" />
+    <None Remove="img\Group7.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Group 7.png" />
+    <Resource Include="img\Frame.png" />
+    <Resource Include="img\Group7.png" />
   </ItemGroup>
 
 </Project>
