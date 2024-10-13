@@ -45,6 +45,12 @@ namespace hotel_management_system
             }
         }
 
+        private void RecuperarPassButton_Click(object sender, RoutedEventArgs e)
+        {
+            new RecuperarPass().Show();
+            this.Close();
+        }
+
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
