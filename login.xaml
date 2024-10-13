@@ -5,20 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:hotel_management_system"
         mc:Ignorable="d"
-        Title="hotel management" Height="600" Width="800" Background="#FF5B7DC1">
+        Title="hotel management" Height="720" Width="1280" Background="#FF1E1E1E">
     <Viewbox>
 
-        <Grid Height="583" Width="800">
+        <Grid Height="720" Width="1280">
             <Grid.Background>
                 <ImageBrush ImageSource="/Group 7.png" Stretch="Fill"/>
             </Grid.Background>
-            <Label Content="Username" HorizontalAlignment="Left" Height="26" Margin="539,174,0,0" VerticalAlignment="Top" Width="126" FontSize="14"/>
-            <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="539,238,0,0" VerticalAlignment="Top" Width="126" FontSize="14"/>
-            <Label Content="Change Password" HorizontalAlignment="Left" Height="26" Margin="539,308,0,0" VerticalAlignment="Top" Width="108" BorderBrush="#FFB0B0B0" Foreground="#FF070707"/>
-            <PasswordBox HorizontalAlignment="Left" Height="30" Margin="548,262,0,0" VerticalAlignment="Top" Width="218" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF5B7DC1" CaretBrush="#FF155574" Foreground="White" SelectionTextBrush="#FF4994B9"/>
-            <Label Content="English" HorizontalAlignment="Left" Height="26" Margin="679,308,0,0" VerticalAlignment="Top" Width="87" Background="{x:Null}" Foreground="White" OpacityMask="#FFB0B0B0"/>
-            <Label Content="Login" HorizontalAlignment="Left" Height="32" Margin="548,384,0,0" VerticalAlignment="Top" Width="218" Background="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" FontSize="14"/>
-            <TextBox HorizontalAlignment="Left" Height="30" Margin="548,200,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF5B7DC1" CaretBrush="#FF155574" Foreground="White" SelectionTextBrush="#FF4994B9"/>
+            <Label Content="Username" HorizontalAlignment="Left" Height="35" Margin="867,210,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
+            <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="867,293,0,0" VerticalAlignment="Top" Width="126" FontSize="18"/>
+            <Label Content="Change Password" HorizontalAlignment="Left" Height="32" Margin="867,379,0,0" VerticalAlignment="Top" Width="138" BorderBrush="#FFB0B0B0" Foreground="#FF070707" FontSize="16"/>
+            <PasswordBox HorizontalAlignment="Left" Height="34" Margin="870,326,0,0" VerticalAlignment="Top" Width="363" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="White" SelectionTextBrush="White" FontSize="20"/>
+            <Label Content="English" HorizontalAlignment="Left" Height="32" Margin="1089,379,0,0" VerticalAlignment="Top" Width="144" Background="{x:Null}" Foreground="White" OpacityMask="#FFB0B0B0" FontSize="16"/>
+            <Label Content="Login" HorizontalAlignment="Left" Height="43" Margin="870,473,0,0" VerticalAlignment="Top" Width="363" Background="{x:Null}" Foreground="White" HorizontalContentAlignment="Center" FontSize="22"/>
+            <TextBox HorizontalAlignment="Left" Height="35" Margin="873,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="White" SelectionTextBrush="#FF424242" FontSize="20"/>
 
         </Grid>
     </Viewbox>

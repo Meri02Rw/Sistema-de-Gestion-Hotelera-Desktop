@@ -30,5 +30,10 @@ namespace hotel_management_system
         {
 
         }
+
+        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
