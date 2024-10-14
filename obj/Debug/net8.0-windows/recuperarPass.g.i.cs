@@ -94,7 +94,7 @@ namespace hotel_management_system {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/hotel_management_system;V1.0.0.0;component/recuperarpass.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/hotel_management_system;component/recuperarpass.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\RecuperarPass.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

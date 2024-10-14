@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="recuperarPass.xaml.cs">
+    <Compile Update="logic\recuperarPass.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Inicio.xaml.cs">
+    <Compile Update="logic\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="Login.xaml">
+    <Page Update="views\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="RecuperarPass.xaml">
+    <Page Update="views\RecuperarPass.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Inicio.xaml">
+    <Page Update="views\Inicio.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
