@@ -16,12 +16,14 @@ using System.Windows.Shapes;
 namespace hotel_management_system
 {
 
-    public partial class RecuperarPass : Window
+    public partial class RecuperarPass : System.Windows.Controls.UserControl
     {
- 
-        public RecuperarPass()
+        private MainWindow mainWindow;
+
+        public RecuperarPass(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
             language.SelectedIndex = 0;
 
         }
@@ -53,8 +55,7 @@ namespace hotel_management_system
 
         private void GoBackButton_Click(object sender, RoutedEventArgs e)
         {
-            new Login().Show();
-            this.Close();
+            mainWindow.MostrarLogin();
         }
 
     }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 D:\ruizm\hotel_management_system\escritorio\visualS\hotel_management_system\hotel_management_system\App.xaml
-3763977750
+4-1336610352
 
-81507440937
+91223681903
 207-1923335020
-views\Inicio.xaml;views\Login.xaml;views\RecuperarPass.xaml;
+views\Inicio.xaml;views\Login.xaml;views\MainWindow.xaml;views\RecuperarPass.xaml;
 
 False
 

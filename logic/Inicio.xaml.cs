@@ -3,11 +3,14 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace hotel_management_system
 {
-    public partial class Inicio : Window
+    public partial class Inicio : System.Windows.Controls.UserControl
     {
-        public Inicio()
+        private MainWindow mainWindow;
+
+        public Inicio(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
         }
 
         private void GestorReservas_Click(object sender, RoutedEventArgs e)

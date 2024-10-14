@@ -13,6 +13,9 @@
     <Compile Update="logic\Inicio.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="logic\MainWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="views\Login.xaml">
@@ -22,6 +25,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="views\Inicio.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="views\MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

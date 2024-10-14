@@ -14,8 +14,9 @@ using System.Windows.Shapes;
 namespace hotel_management_system
 {
 
-    public partial class Login : Window
+    public partial class Login : System.Windows.Controls.UserControl
     {
+        private MainWindow mainWindow;
 
         public static Dictionary<string, string> users = new Dictionary<string, string>
         {
@@ -24,9 +25,10 @@ namespace hotel_management_system
             { "user2", "11111" }
         };
 
-        public Login()
+        public Login(MainWindow mainWindow)
         {
             InitializeComponent();
+            this.mainWindow = mainWindow;
             language.SelectedIndex = 0;
         }
 
@@ -37,8 +39,7 @@ namespace hotel_management_system
 
             if (users.ContainsKey(username) && users[username] == password)
             {
-                new Inicio().Show(); 
-                this.Close();
+                mainWindow.MostrarInicio();
             }
             else
             {
@@ -48,8 +49,7 @@ namespace hotel_management_system
 
         private void RecuperarPassButton_Click(object sender, RoutedEventArgs e)
         {
-            new RecuperarPass().Show();
-            this.Close();
+            mainWindow.MostrarRecuperarPass();
         }
 
         private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)

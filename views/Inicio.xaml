@@ -1,7 +1,7 @@
-<Window x:Class="hotel_management_system.Inicio"
+<UserControl x:Class="hotel_management_system.Inicio"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="Inicio" Height="720" Width="1280" Background="#FF1E1E1E">
+        Height="720" Width="1280">
 
     <Viewbox>
 
@@ -32,4 +32,4 @@
         </Grid>
     </Viewbox>
 
-</Window>
+</UserControl>
