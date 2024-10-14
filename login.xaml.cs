@@ -17,7 +17,7 @@ namespace hotel_management_system
     public partial class Login : Window
     {
 
-        private Dictionary<string, string> users = new Dictionary<string, string>
+        public static Dictionary<string, string> users = new Dictionary<string, string>
         {
             { "admin", "12345" },
             { "user1", "00000" },
@@ -27,6 +27,7 @@ namespace hotel_management_system
         public Login()
         {
             InitializeComponent();
+            language.SelectedIndex = 0;
         }
 
         private void LoginButton_Click(object sender, RoutedEventArgs e)
@@ -51,9 +52,14 @@ namespace hotel_management_system
             this.Close();
         }
 
-        private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {
-
+            if (language.SelectedItem is ComboBoxItem selectedItem && textLanguage != null)
+            {
+                textLanguage.Text = $"Idioma seleccionado: {selectedItem.Content?.ToString() ?? "Ninguno"}";
+            }
         }
+
+
     }
 }

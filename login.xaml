@@ -20,11 +20,15 @@
                 </Button.Background>
             </Button>
             <PasswordBox x:Name="pass" HorizontalAlignment="Left" Height="34" Margin="870,326,0,0" VerticalAlignment="Top" Width="363" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="White" SelectionTextBrush="White" FontSize="20"/>
-            <Button Content="English" HorizontalAlignment="Left" Height="32" Margin="1089,379,0,0" VerticalAlignment="Top" Width="144" Background="{x:Null}" Foreground="White" OpacityMask="#FFB0B0B0" FontSize="16"/>
             <Button Content="Login" Click="LoginButton_Click" HorizontalAlignment="Left" Height="41" Margin="873,473,0,0" VerticalAlignment="Top" Width="355" Foreground="White" HorizontalContentAlignment="Center" FontSize="22" Background="#FF1E1E1E" BorderBrush="{x:Null}"/>
             <TextBlock x:Name="error" Foreground="#FFAB0404" Margin="870,526,47,147" FontSize="15"/>
             <TextBox x:Name="user" HorizontalAlignment="Left" Height="35" Margin="873,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="360" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="White" SelectionTextBrush="#FF424242" FontSize="20"/>
-            <ComboBox HorizontalAlignment="Left" Margin="1089,379,0,0" VerticalAlignment="Top" Width="145" FontSize="16" Height="32"/>
+            <ComboBox x:Name="language" HorizontalAlignment="Left" Margin="1088,379,0,0" VerticalAlignment="Top" Width="146" FontSize="16" Height="32" BorderBrush="Black" Background="Black" OpacityMask="Black" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem Content="English" Background="#FF1E1E1E" Foreground="#FFE9E9E9" BorderBrush="#FF1E1E1E"/>
+                <ComboBoxItem Content="Spanish" Background="#FF1E1E1E" Foreground="#FFE9E9E9" BorderBrush="#FF1E1E1E"/>
+            </ComboBox>
+            <TextBlock x:Name="textLanguage" Foreground="#FFAB0404" Margin="870,426,255,247" FontSize="15"/>
+
 
         </Grid>
     </Viewbox>

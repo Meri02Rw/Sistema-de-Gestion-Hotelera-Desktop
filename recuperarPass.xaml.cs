@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +18,43 @@ namespace hotel_management_system
 
     public partial class RecuperarPass : Window
     {
+ 
         public RecuperarPass()
         {
             InitializeComponent();
+            language.SelectedIndex = 0;
+
+        }
+
+        private void RestorePassword_Click(object sender, RoutedEventArgs e)
+        {
+            string username = user.Text;
+            string newPassword = pass.Password;
+            string confirmPassword = confirmPass.Password;
+
+            if (newPassword != confirmPassword)
+            {
+                mensaje.Text = "Las contraseñas no coinciden";
+                return;
+            }
+
+
+            if (!Login.users.ContainsKey(username))
+            {
+                mensaje.Text = "El nombre de usuario no existe";
+                return;
+            }
+
+            Login.users[username] = newPassword;
+            mensaje.Foreground = System.Windows.Media.Brushes.Green;
+            mensaje.Text = "Contraseña actualizada con éxito";
+
+        }
+
+        private void GoBackButton_Click(object sender, RoutedEventArgs e)
+        {
+            new Login().Show();
+            this.Close();
         }
 
     }

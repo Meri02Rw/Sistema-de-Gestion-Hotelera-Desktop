@@ -14,18 +14,21 @@
             </Grid.Background>
             <Label Content="Username" HorizontalAlignment="Left" Height="35" Margin="481,305,0,0" VerticalAlignment="Top" Width="126" FontSize="16"/>
             <Label Content="Password" HorizontalAlignment="Left" Height="32" Margin="481,358,0,0" VerticalAlignment="Top" Width="126" FontSize="16"/>
-            <Button Content="Go Back" HorizontalAlignment="Center" Height="23" Margin="0,537,0,0" VerticalAlignment="Top" Width="68" BorderBrush="{x:Null}" Foreground="#FF070707" FontSize="14">
+            <Button Content="Go Back" Click="GoBackButton_Click" HorizontalAlignment="Center" Height="23" Margin="0,537,0,0" VerticalAlignment="Top" Width="68" BorderBrush="{x:Null}" Foreground="#FF070707" FontSize="14">
                 <Button.Background>
                     <SolidColorBrush Color="#FFE8E8E8" Opacity="0.25"/>
                 </Button.Background>
             </Button>
             <PasswordBox x:Name="pass" HorizontalAlignment="Left" Height="25" Margin="487,385,0,0" VerticalAlignment="Top" Width="320" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="#FF070707" SelectionTextBrush="White" FontSize="16"/>
-            <Button Content="Reset Password" HorizontalAlignment="Left" Height="27" Margin="487,490,0,0" VerticalAlignment="Top" Width="318" Foreground="White" HorizontalContentAlignment="Center" FontSize="18" Background="#FF5180B0" BorderBrush="{x:Null}"/>
-            <TextBlock x:Name="confirm" Foreground="#FFAB0404" Margin="487,466,475,235"/>
+            <Button Content="Reset Password" Click="RestorePassword_Click" HorizontalAlignment="Left" Height="27" Margin="487,490,0,0" VerticalAlignment="Top" Width="318" Foreground="White" HorizontalContentAlignment="Center" FontSize="18" Background="#FF5180B0" BorderBrush="{x:Null}"/>
+            <TextBlock x:Name="mensaje" Foreground="#FFAB0404" Margin="487,466,475,235" FontSize="14"/>
             <TextBox x:Name="user" HorizontalAlignment="Left" Height="28" Margin="487,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="320" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="#FF070707" SelectionTextBrush="#FF424242" FontSize="16"/>
-            <PasswordBox x:Name="pass_Copiar" HorizontalAlignment="Left" Height="25" Margin="487,436,0,0" VerticalAlignment="Top" Width="320" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="#FF070707" SelectionTextBrush="White" FontSize="16"/>
+            <PasswordBox x:Name="confirmPass" HorizontalAlignment="Left" Height="25" Margin="487,436,0,0" VerticalAlignment="Top" Width="320" Background="{x:Null}" BorderBrush="{x:Null}" SelectionBrush="#FF424242" CaretBrush="#FF424242" Foreground="#FF070707" SelectionTextBrush="White" FontSize="16"/>
             <Label Content="Confirm Password" HorizontalAlignment="Left" Height="32" Margin="481,410,0,0" VerticalAlignment="Top" Width="145" FontSize="16"/>
-            <ComboBox HorizontalAlignment="Left" Margin="1116,17,0,0" VerticalAlignment="Top" Width="144" FontSize="14" Height="24"/>
+            <ComboBox x:Name="language" HorizontalAlignment="Left" Margin="1116,17,0,0" VerticalAlignment="Top" Width="144" FontSize="14" Height="24">
+                <ComboBoxItem Content="English" Background="#FFD9D9D9" BorderBrush="#FFD9D9D9"/>
+                <ComboBoxItem Content="Spanish" Background="#FFD9D9D9" BorderBrush="#FFD9D9D9"/>
+            </ComboBox>
 
         </Grid>
     </Viewbox>
