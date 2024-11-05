@@ -1,0 +1,346 @@
+﻿<UserControl x:Class="PMS.MVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:PMS.MVM.ViewModel"
+             mc:Ignorable="d" Height="410" Width="545">
+
+    <StackPanel>
+        <TextBlock Text="Hotel Information"
+                   Foreground="DarkSlateGray"
+                   FontSize="22"
+                   FontWeight="Bold"
+                   FontFamily="/Fonts/#Poppins"
+                   HorizontalAlignment="Left"
+                   Margin="00,0,0,10"/>
+
+        <StackPanel Orientation="Horizontal">
+            <Border Width="262"
+                    Height="151">
+
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#5bc3cf" Offset="0.0"/>
+                        <GradientStop Color="#3aa0ff" Offset="1.2"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0,0,250,150"/>
+                </Border.Clip>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.ColumnSpan="2" Margin="0,0,0,0">
+                        <TextBlock Text="Rooms on Property"
+                                   Foreground="White"
+                                   FontSize="18"
+                                   FontFamily="/Fonts/#Poppins"
+                                   FontWeight="Bold"
+                                   Margin="10,10,10,0" HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="5 Two Bedroom Villas"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontFamily="/Fonts/#Poppins"
+                                   Margin="10,10,10,0"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="35 One Bedroom Suites"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontFamily="/Fonts/#Poppins"
+                                   Margin="10,10,10,0"
+                                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="30 One Bedroom Villas"
+                                   Foreground="White"
+                                   FontSize="14"
+                                   FontFamily="/Fonts/#Poppins"
+                                   Margin="10,10,10,0"
+                                   HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <Viewbox
+                        Height="174"
+                        VerticalAlignment="Bottom"
+                        Margin="105,0,0,-13"
+                        HorizontalAlignment="Left"
+                        Width="161" Grid.Column="1" Stretch="Fill">
+                        <Viewbox
+                            Height="174" Stretch="Fill" Width="161">
+                            <Viewbox
+                                Height="174" Stretch="Fill" Width="161">
+                                <Image Source="pack://application:,,,/Images/HomeView/1.png"
+                                    RenderTransformOrigin="0.5,0.5"
+                           Height="174" Width="161">
+                                    <Image.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform Angle="-15.169"/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Image.RenderTransform>
+                                </Image>
+                            </Viewbox>
+                        </Viewbox>
+                    </Viewbox>
+                </Grid>
+            </Border>
+            <Border Width="380"
+                    Height="148"
+                    CornerRadius="10" Margin="0,0,10,0"
+                    >
+                <Border.Background>
+                    <LinearGradientBrush StartPoint="0,0" EndPoint="1,2">
+                        <GradientStop Color="#d97504" Offset="0.0"/>
+                        <GradientStop Color="#fff75f" Offset="1.2"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                       RadiusY="10"
+                       Rect="0,0,0250,150"/>
+                </Border.Clip>
+
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Text="ADA Rooms"
+                   Foreground="White"
+                   FontSize="18"
+                   FontWeight="Bold"
+                   Margin="10,10,10,0"
+                   FontFamily="/Fonts/#Poppins"
+                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="105 2BDR Villa"
+                   Foreground="White"
+                   FontSize="14"
+                   FontFamily="/Fonts/#Poppins"
+                   Margin="10,10,10,0"
+                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="119,219 1BDR Suites"
+                   Foreground="White"
+                   FontSize="14"
+                   FontFamily="/Fonts/#Poppins"
+                   Margin="10,10,10,0"
+                   HorizontalAlignment="Left"/>
+
+                        <TextBlock Text="121, 221 1BDR Villas"
+                   Foreground="White"
+                   FontSize="14"
+                   FontFamily="/Fonts/#Poppins"
+                   Margin="10,10,0,0"
+                   HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <Viewbox
+
+                        Height="123"
+                        VerticalAlignment="Bottom"
+                        Margin="150,0,0,-33"
+                        HorizontalAlignment="Left"
+                        Width="133" Stretch="Fill">
+                        <Viewbox
+
+                            Height="123" Stretch="Fill" Width="133">
+                            <Viewbox
+
+                                Height="123" Stretch="Fill" Width="133">
+                                <Viewbox
+
+                                    Height="123" Stretch="Fill" Width="133">
+                                    <Image Source="pack://application:,,,/Images/HomeView/2.png"
+
+          Height="123" Width="133">
+                                        <Image.RenderTransform>
+                                            <TransformGroup>
+                                                <ScaleTransform/>
+                                                <SkewTransform/>
+                                                <RotateTransform Angle="-35"/>
+                                                <TranslateTransform/>
+                                            </TransformGroup>
+                                        </Image.RenderTransform>
+                                    </Image>
+                                </Viewbox>
+                            </Viewbox>
+                        </Viewbox>
+                    </Viewbox>
+                </Grid>
+            </Border>
+ 
+        </StackPanel>
+
+        <StackPanel>
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="7,0,0,0"/>
+
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Text="Resources"
+             Foreground="DarkSlateGray"
+             FontSize="20"
+             FontWeight="Regular"
+             FontFamily="/Fonts/#Poppins"
+             HorizontalAlignment="Left"
+             Margin="0,5,0,10"/>
+
+            <StackPanel Orientation="Horizontal">
+
+
+                <Border Width="120"
+                        Height="120"
+                        Background="#844eff"
+                        CornerRadius="10">
+
+                    <Grid  MouseDown="Documents_MouseDown" Cursor="Hand">
+                        <StackPanel>
+                            <TextBlock Text="Documents"
+                            Foreground="White"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="10,10,10,0"
+                            FontFamily="/Fonts/#Poppins"
+                            HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                        </StackPanel>
+                        <Grid HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top">
+                            <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                                <Viewbox
+                                    Height="80"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Width="80" Stretch="Fill">
+                                    <Viewbox
+                                        Height="80" Stretch="Fill" Width="80">
+                                        <Viewbox
+                                            Height="80" Stretch="Fill" Width="80">
+                                            <Image Source="pack://application:,,,/Images/HomeView/3.png"
+                                                RenderTransformOrigin="0.5,0.5"
+                                    Height="80" Width="80">
+                                            </Image>
+                                        </Viewbox>
+                                    </Viewbox>
+                                </Viewbox>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+
+                <Border Width="120"
+                        Height="120"
+                        Background="#4e99ff"
+                        CornerRadius="10">
+                    <Grid MouseDown="Policies_MouseDown" Cursor="Hand">
+                        <StackPanel>
+                            <TextBlock Text="Policies"
+                            Foreground="White"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="10,10,10,0"
+                            FontFamily="/Fonts/#Poppins"
+                            HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                        </StackPanel>
+                        <Grid HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top">
+                            <Viewbox
+                                Height="80"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="80" Stretch="Fill">
+                                <Viewbox
+                                    Height="80" Stretch="Fill" Width="80">
+                                    <Viewbox
+                                        Height="80" Stretch="Fill" Width="80">
+                                        <Image Source="pack://application:,,,/Images/HomeView/4.png"
+                                            RenderTransformOrigin="0.5,0.5"
+                                Height="80" Width="80">
+                                        </Image>
+                                    </Viewbox>
+                                </Viewbox>
+                            </Viewbox>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Border Width="120"
+                        Height="120"
+                        Background="#76cd48"
+                        CornerRadius="10">
+                    <Grid MouseDown="Contacts_MouseDown" Cursor="Hand">
+                        <StackPanel>
+                            <TextBlock Text="Contacts"
+                            Foreground="White"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="10,10,10,0"
+                            FontFamily="/Fonts/#Poppins"
+                            HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                        </StackPanel>
+                        <Grid HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top">
+                            <Viewbox
+                                Height="80"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="80" Stretch="Fill">
+                                <Viewbox
+                                    Height="80" Stretch="Fill" Width="80">
+                                    <Viewbox
+                                        Height="80" Stretch="Fill" Width="80">
+                                        <Image Source="pack://application:,,,/Images/HomeView/5.png"
+                                            RenderTransformOrigin="0.5,0.5"
+                                Height="80" Width="80">
+                                        </Image>
+                                    </Viewbox>
+                                </Viewbox>
+                            </Viewbox>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+                <Border Width="120"
+                        Height="120"
+                        Background="#c5c72d"
+                        CornerRadius="10">
+                    <Grid MouseDown="WebPage_MouseDown" Cursor="Hand">
+                        <StackPanel>
+                            <TextBlock Text="Web Page"
+                            Foreground="White"
+                            FontSize="12"
+                            FontWeight="Bold"
+                            Margin="10,10,10,0"
+                            FontFamily="/Fonts/#Poppins"
+                            HorizontalAlignment="Center" VerticalAlignment="Bottom"/>
+                        </StackPanel>
+                        <Grid HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top">
+                            <Viewbox
+                                Height="80"
+                                VerticalAlignment="Top"
+                                HorizontalAlignment="Center"
+                                Width="80" Stretch="Fill">
+                                <Viewbox
+                                    Height="80" Stretch="Fill" Width="80">
+                                    <Viewbox
+                                        Height="80" Stretch="Fill" Width="80">
+                                        <Image Source="pack://application:,,,/Images/HomeView/6.png"
+       Height="80" Width="80">
+                                        </Image>
+                                    </Viewbox>
+                                </Viewbox>
+                            </Viewbox>
+                        </Grid>
+                    </Grid>
+                </Border>
+
+
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
