@@ -7,7 +7,7 @@
         xmlns:viewmodel="clr-namespace:PMS.MVM.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="550" Width="800"
-    WindowStyle="None"
+        WindowStyle="None"
         ResizeMode="CanResize"
         Background="Transparent"
         AllowsTransparency="True"
@@ -18,7 +18,7 @@
         <viewmodel:MainViewModel/>
     </Window.DataContext>
 
-    <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
+    <Border CornerRadius="10" Cursor="">
         <Border.Background>
             <VisualBrush>
                 <VisualBrush.Visual>
@@ -31,162 +31,168 @@
             </VisualBrush>
         </Border.Background>
 
-        <Border.BorderBrush>
-            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
-                <GradientStop Color="DarkSlateGray" Offset="0"/>
-                <GradientStop Color="DarkSlateGray" Offset="0.75"/>
-                <GradientStop Color="DarkSlateGray" Offset="1"/>
-            </LinearGradientBrush>
-        </Border.BorderBrush>
-        <Grid>
+        <Border CornerRadius="10" BorderThickness="2" Opacity="0.95">
+ 
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
-                <ColumnDefinition Width="207.955"/>
-                <ColumnDefinition Width="392.045"/>
-            </Grid.ColumnDefinitions>
+            <Border.BorderBrush>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="DarkSlateGray" Offset="0"/>
+                    <GradientStop Color="DarkSlateGray" Offset="0.75"/>
+                    <GradientStop Color="DarkSlateGray" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid>
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="75"/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="207.955"/>
+                    <ColumnDefinition Width="392.045"/>
+                </Grid.ColumnDefinitions>
 
-            <TextBlock Text="VacayPMS"
-                       VerticalAlignment="Center"
-                       FontWeight="Bold"
-                       HorizontalAlignment="Left"
-                       Foreground="DarkSlateGray"
-                       FontSize="22"
-                       FontFamily="/Fonts/#Poppins"
-                            Margin="20,0,0,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
 
-            </TextBlock>
+                <TextBlock Text="VacayPMS"
+                           VerticalAlignment="Center"
+                           FontWeight="Bold"
+                           HorizontalAlignment="Left"
+                           Foreground="DarkSlateGray"
+                           FontSize="22"
+                           FontFamily="/Fonts/#Poppins"
+                                Margin="20,0,0,0">
 
-            <Button x:Name="btnMinimize"                           
-                            BorderThickness="0"
-                            Foreground="White"
-                            FontSize="16"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Grid.Column="2"
-                            Click="btnMinimize_Click" Margin="307,0,10,50">
+                </TextBlock>
 
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="#28AEED"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#278BEF"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
+                <Button x:Name="btnMinimize"                           
+                                BorderThickness="0"
+                                Foreground="White"
+                                FontSize="16"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="2"
+                                Click="btnMinimize_Click" Margin="307,0,10,50">
 
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Width="18" Height="18"
-                                        CornerRadius="9"
-                                        Background="{TemplateBinding Background}">
-                            <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#28AEED"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#278BEF"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
 
-            </Button>
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="18" Height="18"
+                                            CornerRadius="9"
+                                            Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                          HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
 
-            <Button x:Name="btnClose"                          
-                            BorderThickness="0"
-                            Foreground="White"
-                            FontSize="12"
-                            FontFamily="Montserrat"
-                            Cursor="Hand"
-                            Grid.Column="2"
-                            Click="btnClose_Click" Margin="341,0,0,50">
+                </Button>
 
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="Background" Value="#f02121"/>
-                        <Style.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#f02121"/>
-                            </Trigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
+                <Button x:Name="btnClose"                          
+                                BorderThickness="0"
+                                Foreground="White"
+                                FontSize="12"
+                                FontFamily="Montserrat"
+                                Cursor="Hand"
+                                Grid.Column="2"
+                                Click="btnClose_Click" Margin="341,0,0,50">
 
-                <Button.Template>
-                    <ControlTemplate TargetType="Button">
-                        <Border Width="18" Height="18"
-                                        CornerRadius="9"
-                                        Background="{TemplateBinding Background}">
-                            <ContentPresenter VerticalAlignment="Center"
-                                                      HorizontalAlignment="Center"/>
-                        </Border>
-                    </ControlTemplate>
-                </Button.Template>
-            </Button>
+                    <Button.Style>
+                        <Style TargetType="Button">
+                            <Setter Property="Background" Value="#f02121"/>
+                            <Style.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" Value="#f02121"/>
+                                </Trigger>
+                            </Style.Triggers>
+                        </Style>
+                    </Button.Style>
 
-            <StackPanel Grid.Row="1">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Border Width="18" Height="18"
+                                            CornerRadius="9"
+                                            Background="{TemplateBinding Background}">
+                                <ContentPresenter VerticalAlignment="Center"
+                                                          HorizontalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
 
-                <RadioButton Content="Home"
-                             Height="50"
-                             Foreground="DarkSlateGray"
-                             FontFamily="/Fonts/#Poppins"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtontheme}"/>
+                <StackPanel Grid.Row="1">
 
-                <RadioButton Content="Front Desk Manager"
-                            Height="50"
-                            Foreground="DarkSlateGray"
-                            FontFamily="/Fonts/#Poppins"
-                            FontSize="14"
-                            Style="{StaticResource MenuButtontheme}"
-                           />
+                    <RadioButton Content="Home"
+                                 Height="50"
+                                 Foreground="DarkSlateGray"
+                                 FontFamily="/Fonts/#Poppins"
+                                 FontSize="14"
+                                 Style="{StaticResource MenuButtontheme}"/>
 
-                <RadioButton Content="Reservations"
-                            Height="50"
-                            Foreground="DarkSlateGray"
-                            FontFamily="/Fonts/#Poppins"
-                            FontSize="14"
-                            Style="{StaticResource MenuButtontheme}"
-                             />
+                    <RadioButton Content="Front Desk Manager"
+                                Height="50"
+                                Foreground="DarkSlateGray"
+                                FontFamily="/Fonts/#Poppins"
+                                FontSize="14"
+                                Style="{StaticResource MenuButtontheme}"
+                               />
 
-                <RadioButton Content="Profile"
-                            Height="50"
-                            Foreground="DarkSlateGray"
-                            FontFamily="/Fonts/#Poppins"
-                            FontSize="14"
-                            Style="{StaticResource MenuButtontheme}"
-                             />
+                    <RadioButton Content="Reservations"
+                                Height="50"
+                                Foreground="DarkSlateGray"
+                                FontFamily="/Fonts/#Poppins"
+                                FontSize="14"
+                                Style="{StaticResource MenuButtontheme}"
+                                 />
 
-                <RadioButton Content="Logout"
-                            Height="50"
-                            Foreground="DarkSlateGray"
-                            FontFamily="/Fonts/#Poppins"
-                            FontSize="14"
-                            Style="{StaticResource MenuButtontheme}"/>
+                    <RadioButton Content="Profile"
+                                Height="50"
+                                Foreground="DarkSlateGray"
+                                FontFamily="/Fonts/#Poppins"
+                                FontSize="14"
+                                Style="{StaticResource MenuButtontheme}"
+                                 />
 
-
-            </StackPanel>
-
-            <Button x:Name="btnLogout" Click="btnLogout_Click" Margin="0,198,0,219" Grid.Row="1" Opacity="0" Cursor="Hand"/>
-            <Button x:Name="btnReservations" Click="btnReservations_Click" Margin="0,98,0,319" Grid.Row="1" Opacity="0" Cursor="Hand"/>
+                    <RadioButton Content="Logout"
+                                Height="50"
+                                Foreground="DarkSlateGray"
+                                FontFamily="/Fonts/#Poppins"
+                                FontSize="14"
+                                Style="{StaticResource MenuButtontheme}"/>
 
 
-            <TextBox Width="256"
-                       Height="40"
-                       VerticalAlignment="Center"
-                       HorizontalAlignment="Left"
-                       Grid.Column="1"
-                       Style="{StaticResource HomeTextBox}" Grid.ColumnSpan="2"/>
+                </StackPanel>
+
+                <Button x:Name="btnLogout" Click="btnLogout_Click" Margin="0,198,0,219" Grid.Row="1" Opacity="0" Cursor="Hand"/>
+                <Button x:Name="btnReservations" Click="btnReservations_Click" Margin="0,98,0,319" Grid.Row="1" Opacity="0" Cursor="Hand"/>
+                <Button x:Name="btnFrontDeskManager" Click="btnFrontDeskManager_Click" Margin="0,45,0,372" Grid.Row="1" Opacity="0" Cursor="Hand"/>
 
 
-            <ContentControl Grid.Row="1"
-                            Grid.Column="1"
+                <TextBox Width="256"
+                           Height="40"
+                           VerticalAlignment="Center"
+                           HorizontalAlignment="Left"
+                           Grid.Column="1"
+                           Style="{StaticResource HomeTextBox}" Grid.ColumnSpan="2"/>
 
-                            Content="{Binding CurrentView}" Grid.ColumnSpan="2"/>
 
-        </Grid>
+                <ContentControl Grid.Row="1"
+                                Grid.Column="1"
+
+                                Content="{Binding CurrentView}" Grid.ColumnSpan="2"/>
+
+            </Grid>
+        </Border>
     </Border>
+
 </Window>

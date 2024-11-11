@@ -38,7 +38,15 @@ namespace PMS
         {
             // Muestra la ventana de reservations
             FormReservations reservationsWindow = new FormReservations();
-            reservationsWindow.Show(); // Muestra la ventana de inicio de sesión
+            reservationsWindow.Show(); // Muestra la ventana
+            this.Close(); // Cierra la ventana principal
+        }
+
+        private void btnFrontDeskManager_Click(object sender, RoutedEventArgs e)
+        {
+            // Muestra la ventana de Front Desk Manager
+            FrontDeskManager frontDeskManagerWindow = new FrontDeskManager();
+            frontDeskManagerWindow.Show(); // Muestra la ventana
             this.Close(); // Cierra la ventana principal
         }
 

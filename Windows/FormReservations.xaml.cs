@@ -86,6 +86,13 @@ namespace PMS.Windows
                 return;
             }
 
+            // Validar si las fechas de check-in y check-out están seleccionadas
+            if (CheckInDate.SelectedDate == null || CheckOutDate.SelectedDate == null)
+            {
+                MessageBox.Show("Please select both check-in and check-out dates.", "Validation Error", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
             // Creamos la instancia de reservación usando los valores capturados
             Reservation newReservation = new Reservation(
                 ReservationNumber.Text,
@@ -96,13 +103,16 @@ namespace PMS.Windows
                 Address.Text,
                 int.Parse(NumberOfAdults.Text),
                 int.Parse(NumberOfChildren.Text),
-                0,  // Aquí puede ser calculado o ingresado según el diseño
+                0,  // Valor de NumberOfNights
                 Phone.Text,
                 Email.Text,
                 (PaymentMethod.SelectedItem as ComboBoxItem)?.Content.ToString(),
                 "Pending",  // Estado inicial de la reservación
+                "Available ",  // Estado inicial de la habitación
                 new List<string>(),  // Lista vacía inicial para los folios
-                new Dictionary<string, string>()  // Notas vacías para inicializar
+                new Dictionary<string, string>(),  // Inicializa el diccionario de notas vacío
+                CheckInDate.SelectedDate.Value,  // Pass the Check-In date
+                CheckOutDate.SelectedDate.Value  // Pass the Check-Out date
             );
 
             // Guardar la nueva reservación en el diccionario
@@ -164,6 +174,23 @@ namespace PMS.Windows
             this.Close(); // Cierra la ventana principal
         }
 
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized; // Minimiza la ventana.
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); // Cierra la ventana.
+        }
+
+        private void Window_MouseDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == System.Windows.Input.MouseButtonState.Pressed)
+            {
+                this.DragMove(); // Permite mover la ventana al hacer clic y arrastrar.
+            }
+        }
 
     }
 

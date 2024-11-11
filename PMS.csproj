@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\FormReservations\Auxiliar-de-Recepcion-de-un-hotel.jpg" />
     <None Remove="Images\HomeView\1.png" />
     <None Remove="Images\HomeView\2.png" />
     <None Remove="Images\HomeView\3.png" />
@@ -23,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\FormReservations\Auxiliar-de-Recepcion-de-un-hotel.jpg" />
     <Resource Include="Images\HomeView\1.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
